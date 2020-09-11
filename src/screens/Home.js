@@ -56,12 +56,9 @@ export default function Home({ navigation, extraData }) {
   //console.log("uid: ", userId);
   const renderTask = ({ item, index }) => {
     //console.log(item.priority);
-    item.priority = "High" ? setColor("#FF0202") : null;
-    item.priority = "Low" ? setColor("#27AE60") : null;
-    item.priority = "Medium" ? setColor("#2F80ED") : null;
     return (
       <Card
-        customStyle={{ padding: 20, marginBottom: 15, backgroundColor: color }}
+        customStyle={{ padding: 20, marginBottom: 15, backgroundColor: item.priority, }}
       >
         <View style={[styles.titleWrapper, { flex: 1 }]}>
           <View style={{ flexDirection: "row", flexWrap: "wrap", flex: 1 }}>
