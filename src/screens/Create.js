@@ -92,7 +92,7 @@ export default function Create({ route, navigation }) {
             }}
           >
             <TouchableOpacity
-              onPress={() => setPriority("High")}
+              onPress={() => setPriority("#FF0202")}
               style={{
                 height: 50,
                 width: 50,
@@ -104,7 +104,7 @@ export default function Create({ route, navigation }) {
               <Text>High</Text>
             </View>
             <TouchableOpacity
-              onPress={() => setPriority("Low")}
+              onPress={() => setPriority("#27AE60")}
               style={{
                 height: 50,
                 width: 50,
@@ -116,7 +116,7 @@ export default function Create({ route, navigation }) {
               <Text>Low</Text>
             </View>
             <TouchableOpacity
-              onPress={() => setPriority("Medium")}
+              onPress={() => setPriority("#2F80ED")}
               style={{
                 height: 50,
                 width: 50,
